@@ -30,7 +30,7 @@
 	
 -- 	git branch -d develop : delete branch develop	
 -- 	git branch -remote : kiểm tra các nhánh có trên remote
---	git push <remote_name> --delete/-d <branch_name> : delete branch on remote as name origin
+--	git push <remote_name> -d <branch_name> : delete branch on remote as name origin
 -- 	git push origin --all : Đẩy tất cả các nhánh ở local lên server có tên origin
 
 		-------------- ADVANCE -----------------
@@ -61,11 +61,12 @@ không ảnh hưởng tới code chung(main)
 
 	
 +	 Lấy code về sau khi update
-	git fetch <remote> : lấy tất cả branch từ remote về local
+	. git fetch <remote> : lấy tất cả branch từ remote
+		git branch test origin/test : tạo mới branch test ở local từ branch test trên remote
 	
-	git fetch <remote> <branch> : lấy branch chỉ định về local
+	. git fetch <remote> <branch> : lấy branch chỉ định về local
 	
-	git pull origin main
+	. git pull origin main
 	
 	----------------------------------
 	
